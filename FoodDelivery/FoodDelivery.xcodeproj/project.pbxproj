@@ -12,9 +12,13 @@
 		BBFCABB32306BA800045A558 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBFCABB12306BA800045A558 /* Main.storyboard */; };
 		BBFCABB52306BA810045A558 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBFCABB42306BA810045A558 /* Assets.xcassets */; };
 		BBFCABB82306BA810045A558 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBFCABB62306BA810045A558 /* LaunchScreen.storyboard */; };
+		E8307F1AB55DD316B579A2A8 /* Pods_FoodDelivery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 412A90D7CF51099BE60E7688 /* Pods_FoodDelivery.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D962FFD8012EB4303DA28E2 /* Pods-FoodDelivery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodDelivery.debug.xcconfig"; path = "Target Support Files/Pods-FoodDelivery/Pods-FoodDelivery.debug.xcconfig"; sourceTree = "<group>"; };
+		412A90D7CF51099BE60E7688 /* Pods_FoodDelivery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodDelivery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A852263CA2B709AF680B0772 /* Pods-FoodDelivery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodDelivery.release.xcconfig"; path = "Target Support Files/Pods-FoodDelivery/Pods-FoodDelivery.release.xcconfig"; sourceTree = "<group>"; };
 		BBFCABAA2306BA800045A558 /* FoodDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBFCABAD2306BA800045A558 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBFCABAF2306BA800045A558 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8307F1AB55DD316B579A2A8 /* Pods_FoodDelivery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60D4A86EDE811D802B4F3F7A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D962FFD8012EB4303DA28E2 /* Pods-FoodDelivery.debug.xcconfig */,
+				A852263CA2B709AF680B0772 /* Pods-FoodDelivery.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		82FA1484091CFED137D50CDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				412A90D7CF51099BE60E7688 /* Pods_FoodDelivery.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BBFCABA12306BA800045A558 = {
 			isa = PBXGroup;
 			children = (
 				BBFCABAC2306BA800045A558 /* FoodDelivery */,
 				BBFCABAB2306BA800045A558 /* Products */,
+				60D4A86EDE811D802B4F3F7A /* Pods */,
+				82FA1484091CFED137D50CDB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BBFCABBC2306BA810045A558 /* Build configuration list for PBXNativeTarget "FoodDelivery" */;
 			buildPhases = (
+				BC73F9E793A0B1E17BB7F0CD /* [CP] Check Pods Manifest.lock */,
 				BBFCABA62306BA800045A558 /* Sources */,
 				BBFCABA72306BA800045A558 /* Frameworks */,
 				BBFCABA82306BA800045A558 /* Resources */,
+				34D3DB0CAE508871A4CB5067 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34D3DB0CAE508871A4CB5067 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodDelivery/Pods-FoodDelivery-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodDelivery/Pods-FoodDelivery-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodDelivery/Pods-FoodDelivery-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC73F9E793A0B1E17BB7F0CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoodDelivery-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BBFCABA62306BA800045A558 /* Sources */ = {
@@ -280,6 +349,7 @@
 		};
 		BBFCABBD2306BA810045A558 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D962FFD8012EB4303DA28E2 /* Pods-FoodDelivery.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +368,7 @@
 		};
 		BBFCABBE2306BA810045A558 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A852263CA2B709AF680B0772 /* Pods-FoodDelivery.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
