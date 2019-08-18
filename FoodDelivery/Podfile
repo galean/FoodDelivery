@@ -6,7 +6,6 @@ target 'FoodDelivery' do
   use_frameworks!
 
   # Pods for FoodDelivery
-  pod 'ReactiveSwift', '~> 5.0'
   pod 'RealmSwift'
   pod 'Alamofire'
 end
